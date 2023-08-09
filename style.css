@@ -8,8 +8,9 @@ body{
     font: normal 16px/1.5 Roboto, sans-serif;
     background-color: #050607;
     overflow-x: hidden;
-    color: #59f8ed;
+    color: #3daea0;
     padding-bottom: 5px;
+    background-image: url(assets/blob-scatter-haikei2.svg);
 }
 h1{
     text-align: center;
@@ -17,16 +18,16 @@ h1{
 }
 .timeline{
     background-color: rgba(52, 53, 54, 0.09);
-    border: 2px solid rgba(42, 44, 45, 0.1);
+    border: 0px solid rgba(42, 44, 45, 0.1);
     box-shadow: 0 25px 45px rgb(0, 0, 0 , 0.1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(0px);
     padding: 50px 0;
     max-width: 1300px;
     margin: 2rem auto;
     border-radius: 10px;
     position: relative;
 }
-@keyframes zoomInOut{
+/* @keyframes zoomInOut{
     0%,
     50%{
         transform: scale(0.5);
@@ -34,27 +35,27 @@ h1{
     100%{
         transform: scale(1.2);
     }
-}
+} */
 .timeline ul li{
     list-style-type: none;
     position: relative;
     width: 6px;
     margin: 0 auto;
     padding-top: 50px;
-    background-color: rgb(246, 206, 131 , 0.8);
-    border: rgb(246, 206, 131);
+    background-color: rgb(246, 206, 131 , 0.9);
+    border: black);
     box-shadow: 0 25px 45px rgb(0, 0, 0 , 0.1);
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
     border-radius: 10px;
 }
 .timeline ul li::after{ 
     content: '';
     position: absolute;
-    left: 0%;
+    left: 5%;
     bottom: -19px;
     transform: translateX(-40%);
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: 59f8ed ;
     z-index: 1;
@@ -64,11 +65,12 @@ h1{
     bottom: 0;
     width: 400px;
     padding: 2rem;
-    background-color: #050607;
-    box-shadow: 0px 0px 0px 6px rgb(255 255 255 / 40%);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-    color: #59f8ed;
+    background-color: rgba(52, 53, 54, 0.09);
+    backdrop-filter: blur(10px);
+    /* border: solid 2px rgb(255 255 255 / 40%); */
+    box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.243);
+    border-radius: 5px;
+    color: #3daea0;
     margin: 1rem 0;
     opacity: 0.9;
 }
